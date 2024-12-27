@@ -8,8 +8,8 @@ const getRandomNumber = (position) => {
 }
 
 const moveButton = () => {
-    const currentTop = parseInt(window.getComputedStyle(noButton).top, 10) || 0
-    const currentLeft = parseInt(window.getComputedStyle(noButton).left, 10) || 0
+    const currentTop = noButton.offsetTop
+    const currentLeft = noButton.offsetLeft
 
     let newTop, newLeft;
 
